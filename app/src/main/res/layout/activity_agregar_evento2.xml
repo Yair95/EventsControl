@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yairrovero.myapplication.AgregarEvento2Activity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/seleccione_la_hora_de_inicio_y_posteriormente_la_de_fin" />
+
+        <TimePicker
+            android:id="@+id/timePickerHoraAddEvent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnHoraInicioAddEvent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:text="@string/btnhora_inicio"
+            android:layout_below="@+id/timePickerHoraAddEvent2"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnHoraFinAddEvent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignTop="@+id/btnHoraInicioAddEvent2"
+            android:text="@string/hora_fin" />
+
+        <TextView
+            android:id="@+id/TVHoraFinAddEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnHoraFinAddEvent2"
+            android:layout_alignStart="@+id/btnHoraFinAddEvent2"
+            android:layout_below="@+id/btnHoraFinAddEvent2" />
+
+        <TextView
+            android:id="@+id/TVHoraInicioAddEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnHoraInicioAddEvent2"
+            android:layout_below="@+id/btnHoraInicioAddEvent2" />
+
+        <Button
+            android:id="@+id/btnContinuarAddEvento2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continuar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
