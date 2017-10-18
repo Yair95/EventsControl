@@ -20,7 +20,8 @@
             android:layout_alignBottom="@+id/textView2"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="21dp"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            tools:ignore="UnknownId" />
 
         <EditText
             android:id="@+id/ETNombreAddEvent3"
@@ -59,7 +60,8 @@
             android:layout_below="@+id/ETNombreAddEvent3"
             android:ems="10"
             android:hint="@string/apellido_materno"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            tools:ignore="UnknownId" />
 
         <EditText
             android:id="@+id/ETTel1AddEvent3"

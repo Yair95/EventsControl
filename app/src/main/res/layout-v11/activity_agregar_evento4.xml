@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yairrovero.myapplication.AgregarEvento4Activity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccione_la_fecha_del_anticipo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <CalendarView
+            android:id="@+id/CVFechaAnticipoAddEvent4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/TVFechaAnticipoAddEvent4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_below="@+id/CVFechaAnticipoAddEvent4"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/ETCantidadAnticipoAddEvent4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/cantidad"
+            android:inputType="numberDecimal"
+            android:layout_above="@+id/btnFinalizarAddEvent4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp" />
+
+        <Button
+            android:id="@+id/btnFinalizarAddEvent4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terminar"
+            android:layout_marginBottom="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/CVFechaAnticipoAddEvent4"
+            android:layout_marginEnd="11dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_below="@+id/CVFechaAnticipoAddEvent4"
+            android:layout_toEndOf="@+id/textView11"
+            android:text="*" />
+
+        <EditText
+            android:id="@+id/etHoraAnticipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/CVFechaAnticipoAddEvent4"
+            android:layout_below="@+id/ETCantidadAnticipoAddEvent4"
+            android:ems="10"
+            android:hint="hora: HH:MI (24hrs)"
+            android:inputType="time" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="-70dp"
+            android:layout_below="@+id/CVFechaAnticipoAddEvent4"
+            android:layout_toEndOf="@+id/textView11"
+            android:text="*" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
